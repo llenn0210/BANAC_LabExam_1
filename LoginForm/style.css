@@ -1,0 +1,114 @@
+/*log in css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(135deg, #fe8dc6, #f9c4b8, #ee9c8b);
+   position: relative;
+   overflow: hidden;
+}
+
+.card, .home-card {
+  position: relative;
+  z-index: 1; 
+  background: linear-gradient(100deg #fe8dc6, #f9c4b8, #ee9c8b);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  border: 2px solid #020202;
+}
+
+.card h2, .home-card h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.card input[type="email"],
+.card input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #020202;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.card input:focus {
+  border-color: #4facfe;
+  outline: none;
+}
+
+/* Button style for login, register, and logout */
+button, .btn {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 8px;
+  background: #65fe65; /* same blue as login/register */
+  color: rgba(6, 6, 6, 0.779);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+button:hover, .btn:hover {
+  background: #ebff91; /* hover effect */
+}
+
+
+
+.card a, .home-card a {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #070809;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.card a:hover, .home-card a:hover {
+  color: #007acc;
+}
+
+
+.home-card {
+  padding: 40px 50px;
+  width: 400px;
+}
+
+.home-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.home-card a {
+  margin: 10px 8px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #1a2026;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.home-card a:hover {
+  background: #ffffff;
+}
+

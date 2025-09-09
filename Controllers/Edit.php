@@ -55,5 +55,5 @@ if (isset($_POST['submit'])) {
            value="<?php echo htmlspecialchars($student['course']); ?>" required><br><br>
     
     <input type="submit" name="submit" value="Update Record">
-    <a href="index.php">Back to Records</a>
+    <a href="index.php" class ="back-btn">Back to Records</a>
 </form>

@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $password = $_POST['password'];
 
     if($auth->register($email, $password)) {
-        header("Location: log_in.php");
+        header("Location: login.php");
         exit;
     }else {
         $message = "Registration failed. Try again.";

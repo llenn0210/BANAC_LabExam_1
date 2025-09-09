@@ -1,6 +1,7 @@
 <?php
+session_start();
 
-require 'Database.php';
+require_once __DIR__ . '/../Database.php';
 require 'Auth.php';
 
 
@@ -9,7 +10,7 @@ $auth = new Auth($db);
 
 
 $auth->logout();
-header("Location: Log_in.php");
+header("Location: login.php");
 exit;
 
 

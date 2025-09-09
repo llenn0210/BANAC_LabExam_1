@@ -39,4 +39,5 @@ if (isset($_POST['submit'])) {
     <input type="text" name="course" required><br><br>
     
     <input type="submit" name="submit" value="Add Student">
+    <a href="index.php" class="cancel-btn">Cancel</a>
 </form>
